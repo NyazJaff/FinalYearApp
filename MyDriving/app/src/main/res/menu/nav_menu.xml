@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/start"
+        android:title="Start"
+        android:icon="@drawable/ic_route"></item>
+
+    <item android:id="@+id/journeys"
+        android:title="Journeys"
+        android:icon="@drawable/ic_map"></item>
+
+    <item android:id="@+id/performance"
+        android:title="Performance"
+        android:icon="@drawable/ic_performance"></item>
+
+    <item android:id="@+id/help"
+        android:title="Help"
+        android:icon="@drawable/ic_question"></item>
+
+    <item android:id="@+id/Settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"></item>
+
+    <item android:id="@+id/contact"
+        android:title="Contact"
+        android:icon="@drawable/ic_contact"></item>
+
+
+</menu>

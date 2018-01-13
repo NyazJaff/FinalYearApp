@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/progress_background"
+    tools:context="com.jaffn01.mydriving.uni.mydriving.MainActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+        <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/progress_background"
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/drawer">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_activity_frame">
+
+            <fragment
+                android:id="@+id/fragment_place_for_summary"
+                android:name="com.jaffn01.mydriving.uni.mydriving.Start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:layout="@layout/fragment_start"></fragment>
+
+            <ImageView
+                android:id="@+id/progressBlackImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/naviagtion_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/customActionBarColor"
+        app:itemTextColor="@color/whiteColor"
+        app:itemIconTint="@color/whiteColor"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/ic_road_layout"/>
+
+
+    </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+</RelativeLayout>

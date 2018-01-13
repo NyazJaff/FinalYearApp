@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="customTextColour">#274A60</color>
+    <color name="customActionBarColor">#274A60</color>
+
+    <color name="whiteColor">#FFF</color>
+    <color name="whiteGrey">#274A60</color>
+    <color name="customActionBarColorFade">#293238</color>
+    <color name="customActionBarColorFade1">#1a2d39</color>
+    <color name="customRed">#5e2823</color>
+    <color name="red">#df200e</color>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.jaffn01.mydriving.uni.mydriving.Contact"
+    android:background="@drawable/progress_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/contactPersonsEmail"
+                android:layout_width="496dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/contactBodyTxt"
+                android:layout_alignLeft="@+id/contactBodyTxt"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/contactBodyTxt"
+                android:layout_alignStart="@+id/contactBodyTxt"
+                android:layout_marginTop="67dp"
+                android:backgroundTint="@color/whiteColor"
+                android:drawableLeft="@drawable/ic_email"
+                android:ems="10"
+                android:hint="@string/emailInput"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/whiteColor" />
+
+            <EditText
+                android:id="@+id/contactBodyTxt"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:gravity="top"
+                android:background="@drawable/contact_text_view_back"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/contactPersonsEmail"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/contactSendBtn"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whiteColor"
+                android:text="@string/send"
+                android:textColor="@color/customTextColour"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/contactBodyTxt"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/nyazJaffTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:inputType="textMultiLine"
+                android:text="Design and Development by Nyaz Jaff"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/whiteColor"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/contactBodyTxt"
+                android:layout_alignStart="@+id/contactBodyTxt"
+                android:layout_alignRight="@+id/contactBodyTxt"
+                android:layout_alignEnd="@+id/contactBodyTxt"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/contactPersonsEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="55dp"
+                android:text="@string/contactLongMessage"
+                android:textAlignment="center"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactSendBtn"
+                android:layout_alignStart="@+id/contactSendBtn"
+                android:layout_below="@+id/contactSendBtn"
+                android:layout_marginTop="80dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
